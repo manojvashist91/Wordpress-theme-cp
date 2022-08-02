@@ -1,0 +1,200 @@
+.no-page-found-header {
+	padding: 73px 15px 54px;
+
+	a {
+		transition: $cmn-transition;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		img {
+			max-width: 16.56rem;
+		}
+	}
+
+	@media (max-width: 991px) {
+		padding: 50px 15px 26px;
+	}
+
+	@media (max-width: 767px) {
+		padding: 30px 15px 20px;
+
+		>img {
+			max-width: 188px;
+		}
+	}
+}
+
+.no-page-found-section {
+	overflow-x: hidden;
+
+	.info-not-found {
+		max-width: 1350px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+
+		.img-404 {
+			margin-left: 25%;
+		}
+
+		@media (max-width: 1400px) {
+			max-width: 1140px;
+
+			.img-404>img {
+				max-width: 975px;
+			}
+
+			.conetnt-box {
+				left: 6%;
+				bottom: 45px;
+			}
+		}
+
+		@media (max-width: 1199px) {
+			max-width: 960px;
+
+			.img-404>img {
+				max-width: 820px;
+			}
+
+			.conetnt-box {
+				left: 0;
+				bottom: 0;
+			}
+
+			.cmn-heading::after {
+				left: 48px;
+			}
+		}
+
+		@media (max-width: 991px) {
+			max-width: 100%;
+
+			.cmn-heading::after {
+				height: 5px;
+				left: 50%;
+			}
+
+			.img-404 {
+				margin-left: 20%;
+
+				>img {
+					max-width: 850px;
+				}
+			}
+
+			.conetnt-box {
+				text-align: center;
+				position: static;
+				margin: 0 auto;
+				padding-bottom: 25px;
+
+				p {
+					margin: 0 0 50px;
+				}
+
+				h2 {
+					margin-bottom: 20px;
+					font-size: 32px;
+					line-height: 38.4px;
+					position: relative;
+					transform: none;
+					left: initial;
+					top: initial;
+				}
+			}
+		}
+
+		@media (max-width: 767px) {
+			.img-404 {
+				margin-left: 14.5%;
+
+				>img {
+					max-width: 165%;
+				}
+			}
+
+			.conetnt-box {
+				max-width: 330px;
+
+				p {
+					margin: 30px 0;
+				}
+
+				h2 {
+					font-size: 25px;
+					line-height: 30px;
+					margin: 0 0 15px;
+				}
+			}
+		}
+	}
+
+	.conetnt-box {
+		max-width: 385px;
+		position: absolute;
+		left: 10%;
+		bottom: 65px;
+
+		p {
+			margin: 0 0 35px;
+
+			@media(min-width: 1200px) {
+				margin-top: 12px;
+			}
+		}
+
+		h2 {
+			font-size: 39.49px;
+			line-height: 47.39px;
+			margin: 0 0 30px;
+			color: #333;
+			padding-top: 20px;
+			position: absolute;
+			transform: rotate(-90deg);
+			left: -125px;
+			top: -210px;
+		}
+	}
+
+	@media (max-width: 991px) {
+		min-height: calc(100vh - 120px);
+	}
+
+	@media (max-width: 767px) {
+		min-height: calc(100vh - 82px);
+		background-position: -125px calc(100% + 145px);
+	}
+}
+
+// Customizer CSS
+.no-page-found-section {
+	background-position: 5px calc(100% + -3px);
+	background-size: 360px;
+	min-height: calc(100vh - 142px);
+	background-repeat: no-repeat;
+	background-image: url(https://capitalplus.demo.harbingermarketing.com/wp-content/uploads/2022/04/footer-side.png) !important;
+}
+
+.no-page-found-section .conetnt-box h2 {
+	font-weight: 600;
+}
+
+@media(min-width:1199px) {
+	.no-page-found-section .info-not-found .img-404 img {
+		height: 100% !important;
+		max-width: fit-content;
+	}
+}
+
+@media (max-width: 767px) {
+	.no-page-found-section .info-not-found .img-404>img {
+		max-width: 160%;
+	}
+
+	.no-page-found-section .info-not-found .conetnt-box p {
+		font-size: 16px;
+	}
+}

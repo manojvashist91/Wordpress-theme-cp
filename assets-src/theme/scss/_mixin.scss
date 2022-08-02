@@ -1,0 +1,28 @@
+@mixin f-center {
+    // @include f-center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin p-center {
+    // @include p-center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin px-center {
+    // @include px-center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin py-center {
+    // @include py-center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

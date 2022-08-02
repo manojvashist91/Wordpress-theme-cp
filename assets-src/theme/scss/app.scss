@@ -1,0 +1,37 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/v4-shims';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import 'node_modules/swiper/swiper';
+@import 'node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+
+@import // ==========
+// Global SCSS
+"fonts",
+"variable",
+"utilities",
+"mixin",
+"global",
+"header",
+"ninja-form",
+// ==========
+// Pages SCSS
+"pages/home.scss",
+"pages/who-we-are",
+"pages/contractor",
+"pages/receivable-financing",
+"pages/spot-factoring",
+"pages/benefits-contract",
+"pages/404",
+"pages/referral-partners",
+"pages/resource.scss",
+"pages/contact",
+"pages/single-blog-post",
+"pages/construction-factoring",
+"pages/privacy-policy",
+"footer",
+// ==========
+// Responsive CSS
+"responsive";

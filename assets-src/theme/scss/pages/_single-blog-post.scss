@@ -1,0 +1,201 @@
+.main-aside {
+
+    .searchform {
+        position: relative;
+        margin-bottom: 50px;
+
+        input[type="text"] {
+            background-image: url('/wp-content/themes/CapitalPlus/assets/theme/img/search.svg');
+            background-size: 24px;
+            background-repeat: no-repeat;
+            background-position: 20px center;
+            width: 100%;
+            padding: 15px 20px 15px 60px;
+            font-size: 18px;
+            color: $primary_black;
+            border-radius: 10px;
+            border: 1px solid transparent;
+
+            &:focus {
+                border-color: $primary_blue;
+            }
+
+            &:focus-visible {
+                outline: none;
+            }
+
+            &::-webkit-input-placeholder,
+            &:-ms-input-placeholder,
+            &::placeholder {
+                color: $primary_black;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: map-get($font-weight, regular);
+                font-family: $secondary-fonts;
+            }
+        }
+
+        input[type="submit"] {
+            display: none;
+        }
+    }
+
+    select.postform {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #07182F;
+        font-size: 18px;
+        color: $primary_green;
+        line-height: 130%;
+        height: 35px;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+        font-weight: map-get($font-weight, semi_bold);
+        margin-bottom: 30px;
+    }
+
+    ul {
+        padding: 0;
+        margin-bottom: 50px;
+
+        li {
+            list-style-type: none;
+            border-bottom: 1px solid rgba(7, 24, 47, 0.1);
+
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                transition: all 200ms ease;
+                line-height: 130%;
+                font-size: 18px;
+                font-weight: map-get($font-weight, regular);
+                transition: all 200ms ease;
+                color: $primary_black;
+
+                &:hover {
+                    color: $primary_green;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+    .aside-head {
+        text-align: center;
+
+        h2 {
+            text-align: left;
+        }
+
+        >.btn {
+            margin-top: 35px;
+        }
+
+        >a:not(.btn) {
+            display: block;
+            margin-bottom: 20px;
+
+            &:hover {
+                .cmn-heading {
+                    color: $primary_green !important;
+                }
+            }
+        }
+
+        .card {
+            padding: 10px;
+            flex-direction: row;
+            text-align: left;
+            border-radius: 20px;
+
+            .img-wrap {
+                width: 120px;
+                height: 120px;
+                min-width: 120px;
+                border-radius: 10px;
+                overflow: hidden;
+
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .content-warp {
+                flex-grow: 1;
+                @include f-center;
+                padding-left: 10px;
+
+                h5.cmn-heading {
+                    padding-top: 14px;
+                    font-size: 18px;
+                    line-height: 21px;
+                    letter-spacing: 0.54px;
+                    font-family: $secondary-fonts;
+                    font-weight: map-get($font-weight, semi_bold);
+                    color: $primary_black;
+                    transition: $cmn-transition;
+
+                    &::after {
+                        left: 0;
+                        transform: none;
+                        height: 4px;
+                        width: 30px;
+                    }
+                }
+            }
+
+            .card-body {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.single-blog-content .wp-block-image {
+    figcaption {
+        font-family: "Manjari", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 16px;
+    }
+
+    figure {
+        margin-top: 0;
+    }
+}
+
+.blog-back-btn {
+    position: relative;
+    padding-left: 10px;
+}
+
+.blog-back-btn i::before {
+    content: "\f104";
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+
+.single-blog-wrap .single-blog-content ul li {
+    margin-bottom: 5px;
+}
+
+.single-blog-content img {
+    border-radius: 150px 20px !important;
+}

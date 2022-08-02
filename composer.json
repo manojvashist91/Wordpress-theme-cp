@@ -1,0 +1,17 @@
+{
+    "require": {
+        "htmlburger/carbon-fields": "^3.3",
+        "cbschuld/browser.php": "^1.9",
+        "meyfa/php-svg": "^0.10.0",
+        "espresso-dev/instagram-basic-display-php": "^1.1",
+        "mpdf/mpdf": "^8.0",
+        "iamntz/carbon-fields-urlpicker": "v3.x-dev",
+        "google/apiclient": "^2.12"
+    },
+
+	"autoload": {
+		"psr-4": {
+			"Harbinger_Marketing\\": "lib/classes"
+		}
+	}
+}

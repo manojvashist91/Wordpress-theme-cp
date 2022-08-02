@@ -1,0 +1,29 @@
+.login h1 a {
+  width: 90%;
+  height: 70px;
+  background-size: contain;
+  background-position: center;
+  background-image: var(--theme-logo-raster-colorful-url);
+}
+
+#wp-admin-bar-theme-logo img {
+  width: 20px;
+  height: auto;
+  margin-top: 0;
+}
+
+#footer-thankyou a {
+  display: inline-block;
+  width: 100px;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: opacity 0.3s ease;
+}
+#footer-thankyou a:hover {
+  opacity: 0.6;
+}
+#footer-thankyou svg {
+  display: block;
+  width: 100%;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7OztBQUdEO0VBQ0M7RUFDQTtFQUNBOzs7QUFJQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQzs7QUFJRjtFQUNDO0VBQ0EiLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubG9naW4gaDEgYSB7XHJcblx0d2lkdGg6IDkwJTtcclxuXHRoZWlnaHQ6IDcwcHg7XHJcblx0YmFja2dyb3VuZC1zaXplOiBjb250YWluO1xyXG5cdGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcclxuXHRiYWNrZ3JvdW5kLWltYWdlOiB2YXIoLS10aGVtZS1sb2dvLXJhc3Rlci1jb2xvcmZ1bC11cmwpO1xyXG59XHJcblxyXG4jd3AtYWRtaW4tYmFyLXRoZW1lLWxvZ28gaW1nIHtcclxuXHR3aWR0aDogMjBweDtcclxuXHRoZWlnaHQ6IGF1dG87XHJcblx0bWFyZ2luLXRvcDogMDtcclxufVxyXG5cclxuI2Zvb3Rlci10aGFua3lvdSB7XHJcblx0YSB7XHJcblx0XHRkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcblx0XHR3aWR0aDogMTAwcHg7XHJcblx0XHRtYXJnaW4tbGVmdDogNXB4O1xyXG5cdFx0dmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuXHRcdHRyYW5zaXRpb246IG9wYWNpdHkgMC4zcyBlYXNlO1xyXG5cclxuXHRcdCY6aG92ZXIge1xyXG5cdFx0XHRvcGFjaXR5OiAwLjY7XHJcblx0XHR9XHJcblx0fVxyXG5cclxuXHRzdmcge1xyXG5cdFx0ZGlzcGxheTogYmxvY2s7XHJcblx0XHR3aWR0aDogMTAwJTtcclxuXHR9XHJcbn0iXX0= */

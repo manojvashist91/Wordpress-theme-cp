@@ -1,0 +1,15 @@
+.border-transform {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 2px solid $primary_green;
+        transform: translate(20px, -20px);
+        border-radius: inherit;
+    }
+}
