@@ -1,0 +1,122 @@
+.cmn-accordion {
+    max-width: 1180px;
+
+    .accordion-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .accordion-title {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        max-width: 556px;
+        font-weight: map-get($font-weight, semi_bold);
+        letter-spacing: 0.96px;
+    }
+
+    .accordion-button,
+    .accordion-collapse {
+        border-left: 10px solid rgba(80, 161, 70, .3);
+
+        @media(max-width: 1199px) {
+            border-left-width: 4px;
+        }
+    }
+
+    .accordion-item {
+        margin-bottom: 10px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.08));
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0px;
+            width: 10px;
+            background-color: $primary_green;
+            transition: $cmn-transition;
+            z-index: 2;
+        }
+
+        &.show::before {
+            height: 100%;
+        }
+
+        @media(max-width: 1199px) {
+            &::before {
+                width: 4px;
+            }
+
+            .accordion-collapse,
+            .accordion-button {
+                border-left-width: 4px;
+            }
+        }
+
+        .accordion-button {
+            padding: 1.4375rem 2.5rem;
+
+            h4 {
+                font-weight: map-get($font-weight, light_bold);
+            }
+
+            &:hover {
+                z-index: 1;
+            }
+
+            &::after {
+                display: none;
+            }
+
+            &:not(.collapsed) {
+                color: $primary_blue;
+                background-color: transparent !important;
+                box-shadow: none;
+            }
+
+            &:focus {
+                box-shadow: none;
+                color: $primary_blue;
+                background-color: transparent !important;
+            }
+
+            .cmn-btn {
+                position: relative;
+                padding: 16px 18px;
+
+                i {
+                    font-size: 1.375rem;
+                }
+            }
+
+            &[aria-expanded="true"] {
+                .cmn-btn i::before {
+                    content: '\f068';
+                }
+            }
+        }
+    }
+
+    .accordion-body {
+        padding: 0 2.5rem;
+
+        .accordion-content {
+            padding: 1.875rem 0;
+            border-top: 1px solid $accordion-body-border;
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        p {
+            font-size: map-get($font, heading_five);
+            font-weight: map-get($font-weight, regular);
+            // max-width: 100%;
+        }
+    }
+}

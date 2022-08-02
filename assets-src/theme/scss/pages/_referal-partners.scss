@@ -1,0 +1,86 @@
+// .green-marker {
+//     li::marker {
+//         font-size: 2rem;
+//         color: $primary_green;
+//     }
+// }
+
+.custom-collapsible-tab {
+    font-size: map-get($font, heading_four);
+
+    h3,
+    span {
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .cmn-radius-box {
+        padding: var(--unit-6);
+    }
+
+    .row {
+        border-bottom: 2px solid $circle-grey;
+    }
+
+    .btn {
+        background-color: $lighter_grey;
+        box-shadow: none;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1.5px solid $primary_green;
+            border-radius: inherit;
+            transform: translate(5px, -5px);
+        }
+
+        &:hover {
+            color: $primary_green;
+        }
+
+        &::after {
+            transform: translate(4px, -2px);
+        }
+
+        >strong {
+            padding: 0 2.2rem;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                width: 14px;
+                height: 14px;
+                border-left: 4px solid $primary_green;
+                border-bottom: 4px solid $primary_green;
+                position: absolute;
+                top: 40%;
+                transform: translateY(-50%) rotate(-45deg);
+            }
+
+            &::before {
+                left: 0;
+            }
+
+            &::after {
+                right: 0;
+            }
+        }
+    }
+
+    .btn[aria-expanded="true"] {
+
+        >strong {
+
+            &::before,
+            &::after {
+                top: 60%;
+                transform: translateY(-50%) rotate(135deg);
+            }
+        }
+    }
+}

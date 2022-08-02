@@ -1,0 +1,32 @@
+.login h1 a {
+	width: 90%;
+	height: 70px;
+	background-size: contain;
+	background-position: center;
+	background-image: var(--theme-logo-raster-colorful-url);
+}
+
+#wp-admin-bar-theme-logo img {
+	width: 20px;
+	height: auto;
+	margin-top: 0;
+}
+
+#footer-thankyou {
+	a {
+		display: inline-block;
+		width: 100px;
+		margin-left: 5px;
+		vertical-align: middle;
+		transition: opacity 0.3s ease;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	svg {
+		display: block;
+		width: 100%;
+	}
+}

@@ -1,0 +1,247 @@
+:root {
+    --unit-8: 8.75rem;
+    --unit-7: 5.5rem;
+    --unit-6: 4.375rem;
+    --unit-5: 3.125rem;
+    --cmn-box-radius: 9.375rem 1.25rem;
+
+    @media(max-width: 1199px) {
+        --unit-8: 100px;
+        --unit-6: 30px;
+        --cmn-box-radius: 90px 15px;
+    }
+
+    @media(max-width: 575px) {
+        --unit-8: 80px;
+        --unit-6: 20px;
+        --cmn-box-radius: 70px 15px;
+    }
+}
+
+// ==========
+// Colors
+$white : #ffffff;
+$lighter_white: rgba($white, .3);
+$black : #000000;
+$primary_border: rgba(7, 24, 47, 0.05);
+$primary_border-lighter: rgba(51, 51, 51, .2);
+$circle-grey: #EFEFEF;
+$lightBlur_border: #58688C;
+$lighter_grey: #F8F8F8;
+$grey-100: rgba(7, 24, 47, 0.5);
+$body_grey: #E5E5E5;
+$primary_black: #333333;
+$primary_font_color: rgba(51, 51, 51, .8);
+$primary_blue :#21438E;
+$primary_blue_light: rgba($primary_blue, .8);
+$darken_blue: #11285B;
+$primary_green: #50A146;
+$lighter_green: rgba(80, 161, 70, 0.3);
+$circle_blue_100: #21438E;
+$circle_blue_200: #3F72E1;
+$circle_green_100: #6AD05E;
+$circle_green_200: #50A146;
+$circle_green_300: #377E2E;
+$circle_green_400: #144F0C;
+$accordion-body-border: rgba(51, 51, 51, 0.1);
+// ==========
+// Typography
+$primary_fonts: 'Poppins',
+sans-serif;
+$secondary-fonts: 'Manjari',
+sans-serif;
+
+$font:("primary_font": 16px,
+    "base_font": 20px,
+    "heading_one": 62px,
+    "heading_two": 32px,
+    "heading_three": 1.75rem,
+    "heading_four": 24px,
+    "heading_five": 18px,
+    "heading_six": 14px);
+
+$font-weight:("lighter": 300,
+    "regular": 400,
+    "medium": 500,
+    "light_bold": 600,
+    "semi_bold": 700,
+    "ultra_bold": 900);
+
+
+h1,
+.h1,
+h2,
+.h2 {
+    font-weight: map-get($font-weight, regular);
+    line-height: 1.2;
+}
+
+h1,
+.h1 {
+    font-size: map-get($font, heading_one) !important;
+    line-height: 74px;
+    letter-spacing: 1.86px;
+    margin: 0 0 1.25rem;
+
+    strong {
+        font-weight: map-get($font-weight, light_bold);
+    }
+
+    @media (max-width: 1499px) {
+        font-size: 55px !important;
+        line-height: 67px;
+    }
+
+    @media (max-width: 1199px) {
+        font-size: 50px !important;
+        line-height: 60px;
+        letter-spacing: 1.5px;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 36px !important;
+        line-height: 43.2px;
+        letter-spacing: 1.08px;
+    }
+}
+
+h1.cmn-heading,
+.h1.cmn-heading {
+    font-weight: map-get($font-weight, lighter);
+}
+
+h2,
+.h2 {
+    font-size: map-get($font, heading_two);
+    font-weight: map-get($font-weight, light_bold);
+    line-height: 38.4px;
+    letter-spacing: 0.96px;
+
+    @media (max-width: 1199px) {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.75px;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+    }
+}
+
+h3,
+.h3 {
+    font-size: map-get($font, heading_three);
+}
+
+h4,
+.h4 {
+    font-size: map-get($font, heading_four);
+    font-weight: map-get($font-weight, light_bold);
+    letter-spacing: 0.72px;
+
+    @media(max-width: 1199px) {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+    }
+
+    @media(max-width: 575px) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+h5,
+.h5 {
+    font-size: map-get($font, heading_five);
+}
+
+h6,
+.h6 {
+    font-size: map-get($font, heading_six);
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+section {
+
+    p,
+    li {
+        font-family: $secondary-fonts;
+        font-weight: map-get($font-weight, regular);
+    }
+}
+
+p {
+    &:empty {
+        display: none;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $primary_green;
+    transition: all 300ms ease;
+
+    i {
+        color: inherit;
+        vertical-align: bottom;
+    }
+
+    &:hover {
+        color: $primary_blue;
+    }
+
+    >span {
+        color: inherit;
+        vertical-align: middle;
+    }
+
+    &:-webkit-any-link,
+    &:focus,
+    &:focus-visible {
+        outline-offset: 0 !important;
+        outline: none !important;
+    }
+}
+
+p:empty{
+	display: none;
+}
+
+// Common SCSS
+// ==========
+// Transitions
+$cmn_transition: all 200ms ease;
+// ==========
+// Shadows
+$base_shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+$cmn_shadow: 0px 4px 4px rgba($black, .5);
+$cmn_shadow-lg: 0px 20px 10px rgba($black, .8);
+$cmn-box-shadow: 0px 20px 40px rgba($black, .14);
+// ==========
+// Border Radius
+$cmn-box-radius-sm: 8.125rem 1.25rem 8.125rem 1.25rem;
+$quarter-circle-radius: 100% 0% 0% 0%;
+$slider-image-box: 3.75rem 1.25rem 3.75rem 1.25rem;
+// ==========
+// Shapes
+$shape-size-lg: 15.3125rem;
+$cmn-space-lg: 7.5rem;
+$tab-aside-width: 168px;
+// ==========
+// Margin & Paddings
+$unit-30: 1.875rem;
+
+
+// ==========
+// Breakpoints

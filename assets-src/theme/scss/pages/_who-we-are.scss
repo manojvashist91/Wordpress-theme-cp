@@ -1,0 +1,287 @@
+.info-sec {
+
+    h2 {
+        max-width: 782px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-top: 15px;
+    }
+}
+
+.radius-cards {
+    padding-bottom: 86px;
+
+    @media(max-width: 1199px) {
+        padding-bottom: 46px;
+    }
+
+    .cmn-heading {
+        margin-bottom: 0;
+    }
+
+    .container-xs {
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-weight: map-get($font-weight, regular);
+        }
+
+        >ul {
+            margin: 26px 0 0;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .cmn-heading {
+            margin: 0;
+
+            @media(max-width: 1199px) {
+                margin: 35px 0 20px;
+            }
+
+            @media(max-width: 575px) {
+                margin: 15px 0 15px;
+            }
+        }
+    }
+
+    .cmn-radius-box {
+        padding: 0 30px 4.5rem;
+        height: 100%;
+        position: relative;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid $primary_green;
+            border-radius: inherit;
+            transform: translate(-15px, -15px);
+            z-index: -1;
+        }
+
+        h3 {
+            letter-spacing: 0.72px;
+            font-weight: map-get($font-weight, semi_bold)
+        }
+    }
+
+    .card-icon {
+        background: linear-gradient(92.3deg, rgba(89, 189, 105, 0.5) 15.31%, rgba(167, 255, 202, 0) 76.35%), #50A146;
+        height: 160px;
+        width: 160px;
+        margin: 0 auto 30px;
+        border-radius: 0 0 50% 50%;
+    }
+
+    .row>div {
+        margin-bottom: 54px;
+    }
+
+    .row>div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+// story
+.our-stories-sec {
+    position: relative;
+    font-weight: map-get($font-weight, regular);
+
+    .cmn-heading strong {
+        font-weight: map-get($font-weight, light_bold);
+    }
+    
+    >picture,
+    >picture>img,
+    >picture>source {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    >.container-xxl {
+        z-index: 2;
+    }
+
+    .h4 {
+        margin: 50px 0 30px;
+
+        @media(max-width: 1199px) {
+            margin: 50px 0 20px;
+        }
+
+        @media(max-width: 575px) {
+            margin: 30px 0 20px;
+        }
+    }
+
+    @media(min-width: 1200px) {
+        .f-center {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+    }
+
+    .image-radius-mask {
+        -webkit-mask-image: url('/wp-content/themes/CapitalPlus/assets/theme/img/radius-mask.svg');
+        mask-image: url('/wp-content/themes/CapitalPlus/assets/theme/img/radius-mask.svg');
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        position: relative;
+        padding-top: 50.46%;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+// story
+
+.our-team-sec {
+    padding-bottom: 7.5rem;
+
+    @media(max-width: 1199px) {
+        padding-bottom: 80px;
+    }
+
+    @media(max-width: 575px) {
+        padding-bottom: 60px;
+    }
+
+    .cmn-radius-box {
+        margin-top: 5rem;
+        min-height: 25rem;
+        padding: 12rem 1.875rem 4.5rem;
+        height: calc(100% - 5rem);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .img-wrap {
+        position: absolute;
+        height: 15.625rem;
+        width: 15.625rem;
+        border: 1px solid $primary_green;
+        padding: 10px;
+        top: -5rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img{
+            object-position: top;
+        }
+        
+        .hover-image {
+            position: absolute;
+            top: 9px;
+            left: 9px;
+            width: calc(100% - 18px);
+            height: calc(100% - 18px);
+            transition: all 0.3s ease-out;
+            opacity: 0;
+        }
+
+        &:hover {
+            .hover-image {
+                opacity: 1;
+            }
+        }
+
+        @media(max-width: 1199px) {
+            height: 190px;
+            width: 190px;
+            padding: 8px;
+
+            .hover-image {
+                top: 7px;
+                left: 7px;
+                width: calc(100% - 14px);
+                height: calc(100% - 14px);
+            }
+        }
+
+        a {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 4.5rem;
+            width: 4.5rem;
+            border-radius: inherit;
+            @include f-center;
+            transition: all 200ms ease;
+
+            i {
+                color: $white;
+                font-size: 1.8rem;
+                margin: 0;
+            }
+
+            &:hover {
+                i {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: map-get($font-weight, semi_bold);
+    }
+
+    h4 {
+        font-size: 16px;
+        color: $primary_black;
+        opacity: .4;
+        font-weight: map-get($font-weight, semi_bold);
+        margin-bottom: 1.875rem;
+        font-family: $secondary-fonts;
+    }
+
+    li {
+        margin-bottom: 1.5rem;
+        a {
+            color: $primary_black;
+            font-family: $primary_fonts;
+            display: inline-flex;
+            white-space: normal;
+            word-break: break-word;
+            font-size: 16px;
+
+            &:hover {
+                color: $primary_green !important;
+            }
+        }
+    }
+}

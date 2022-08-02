@@ -1,0 +1,6 @@
+.benefit-contract {
+    p {
+        font-size: map-get($font, "heading_four");
+        font-weight: map-get($font-weight, regular) !important;
+    }
+}
